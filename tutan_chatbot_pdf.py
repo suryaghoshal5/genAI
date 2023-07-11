@@ -1,3 +1,11 @@
+import sys
+import subprocess
+
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'streamlit_chat'])
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'langchain'])
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'tempfile'])
+
+
 import streamlit as st
 from streamlit_chat import message
 from langchain.embeddings.openai import OpenAIEmbeddings
